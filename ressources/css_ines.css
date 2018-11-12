@@ -1,0 +1,88 @@
+/* ---------- formulaire ---------- */
+
+.bloc_formulaire {
+	min-height: 100vh;
+	margin: -35px 0px 0px 0px;
+	background-color: rgba(240, 240, 240, 1);
+	text-align: center;
+}
+
+.titre_formulaire {
+	color: rgba(98, 169, 240, 1);
+	padding-top: 30px;
+	font-size: 35px;
+	font-family: "trebuchet ms";
+	text-decoration: none;
+	letter-spacing: 0px;
+	text-transform: none;
+	text-align: center;
+}
+
+.tab_formulaire {
+	padding-left: 100px;
+	padding-right: 100px;
+	margin-top: 25px;
+	font-family: "trebuchet ms";
+	font-size: 15px;
+	color: rgba(55, 55, 55, 1);
+}
+
+.tabline_formulaire{
+	width: 50%;
+	height: 10px;
+	padding: 10px 0px 10px 0px;
+}
+
+.tab_formulaire_input {
+	width: 277px;
+	font-family: "trebuchet ms";
+	font-size: 14px;
+	height: 20px;
+}
+
+.button_formulaire {
+	border: 2px solid rgba(98, 169, 240, 1);
+	color: rgba(240, 240, 240, 1);
+	font-size: 20px;
+	font-family: "trebuchet ms";
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-right: 25px;
+	padding-left: 25px;
+	background-color: rgba(98, 169, 240, 1);
+	text-decoration: none;
+	width: 300px;
+	margin-top: 25px;
+	transition: .25s;
+}
+
+.button_formulaire:hover {
+	background-color: rgba(98, 169, 240, 0);
+	border: 2px solid rgba(98, 169, 240, 1);
+	color: rgba(98, 169, 240, 1);
+}
+
+/* FOOTER */
+.bloc_footer{
+	background-color: rgba(55, 55, 55, 1);
+}
+
+.tab_footer{
+	font-family: "Trebuchet MS";
+	font-size: 13px;
+	color: rgba(240, 240, 240, 1);
+	width: 100%;
+	text-align: center;
+}
+
+.tab_footer_logo{
+	width: 15%;
+}
+
+.tab_footer_liens{
+	width: 30%;
+}
+
+.tab_footer_copyright{
+	width: 65%;
+}
