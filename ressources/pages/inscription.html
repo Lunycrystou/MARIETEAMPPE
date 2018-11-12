@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<HTML lang="FR">
+	<HEAD>
+		<META charset ="UTF-8">
+		<TITLE>Ajouter un utilisateur</TITLE>
+		<LINK rel="stylesheet" href="css_ines.css">
+	</HEAD>
+	
+	<BODY class="bloc_formulaire">
+		<CENTER>
+			<FORM method="POST" action="page_inscription.php">
+				<P class="titre_formulaire">Ajout d'un utilisateur</p>
+				
+				<TABLE class="tab_formulaire">
+					<TR>
+						<TD class="tabline_formulaire">
+							<LABEL for="lname_text">Nom : </LABEL>
+						</TD>
+						<TD class="tabline_formulaire">
+							<INPUT class="tab_formulaire_input" type="text" id="lname_text" name="lname_text" required />
+						</TD>
+					</TR>
+					<TR>
+						<TD class="tabline_formulaire">
+							<LABEL for="fname_text">Prénom : </LABEL>
+						</TD>
+						<TD class="tabline_formulaire">
+							<INPUT class="tab_formulaire_input" type="text" id="fname_text" name="fname_text" required />
+						</TD>
+					</TR>
+					<TR>
+						<TD class="tabline_formulaire">
+							<LABEL for="mail_email">Adresse mail :</LABEL>
+						</TD>
+						<TD class="tabline_formulaire">
+							<INPUT class="tab_formulaire_input" type="email" id="mail_email" name="mail_email" required />
+							<BR/> L'adresse e-mail sera utilisée pour se connecter sur l'application.
+						</TD>
+					</TR>
+						<TR>
+							<TD class="tabline_formulaire">
+								<LABEL for="pass1_password">Mot de passe : </LABEL>
+							</TD>
+							<TD class="tabline_formulaire">
+								<INPUT class="tab_formulaire_input" type="password" id="pass1_password" name="pass1_password" required minlength=6 />
+							</TD>
+						</TR>
+						<TR>
+							<TD class="tabline_formulaire">
+								<LABEL for="pass2_password">Confirmation du mot de passe : </LABEL>
+							</TD>
+							<TD class="tabline_formulaire">
+								<INPUT class="tab_formulaire_input" type="password" id="pass2_password" name="pass2_password" required minlength=6 onchange="checkPass()" />
+								<BR/> <DIV id="info_mdp" class="info_mdp"></DIV>
+							</TD>
+						</TR>
+					</TABLE>
+					<BR/>
+					<INPUT type="submit" value="Ajouter l'utilisateur" name="ajout_utilisateur" class="button_formulaire" />
+			</FORM>
+		</CENTER>
+	</BODY>
+	<SCRIPT type="text/javascript">
+		/* Script vérifiant si les deux mots de passe sont identiques au moment de l'inscription. */
+
+		function checkPass() {
+			var mdp1 = document.getElementById("pass1_password").value;
+			var mdp1_field = document.getElementById("pass1_password");
+			var mdp2 = document.getElementById("pass2_password").value;
+			var mdp2_field = document.getElementById("pass2_password");
+			var info = document.getElementById("info_mdp");
+			if (mdp1 != mdp2) {
+				mdp1_field.classList.add("wrong_password");
+				mdp2_field.classList.add("wrong_password");
+				info.innerHTML = "Les mots de passe ne correspondent pas.";
+			}else{
+				if (mdp1 == mdp2) {
+					mdp1_field.classList.remove("wrong_password");
+					mdp2_field.classList.remove("wrong_password");
+					info.innerHTML = "";
+				}
+			}
+		}
+	</SCRIPT>
+</HTML>

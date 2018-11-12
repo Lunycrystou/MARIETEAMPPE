@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<HTML lang="FR">
+	<HEAD>
+		<META charset ="UTF-8">
+		<TITLE>Supprimer une liaison</TITLE>
+		<LINK rel="stylesheet" href="css_ines.css">
+	</HEAD>
+
+	<BODY class="bloc_formulaire">
+		<div class="fond_menugauche">
+			<p class="titre_menugauche" align="center"><b>Liaisons</b></p>
+			<a href="planif_jour.php" id="lien1" class="lien_menugauche" target="contenu_principal">Liste des liaisons</a>
+			<br/> <br/>
+			<a href="ajout_liaison.html" id="lien2" class="lien_menugauche" target="contenu_principal">Ajouter une liaison</a>
+			<br/> <br/>
+			<a href="modif_liaison.html" id="lien3" class="lien_menugauche" target="contenu_principal">Modifier une liaison</a>
+			<br/> <br/>
+			<a href="suppr_liaison.html" id="lien4" class="lien_menugauche" target="contenu_principal">Supprimer une liaison</a>
+		</div>
+		<CENTER>
+			<FORM method="POST" action="page_inscription.php">
+				<P class="titre_formulaire">Supprimer une liaison</p>
+				
+				<TABLE class="tab_formulaire">
+					<TR>
+						<TD class="tabline_formulaire">
+							<LABEL for="liaison_select">Liaison : </LABEL>
+						</TD>
+						<TD class="tabline_formulaire">
+						<!-- Liste déroulante contenant les différents liaisons -->
+								<?php
+								$cherche_liaisons = "SELECT portDepart, portArrivee FROM liaison";
+								$liste_liaisons = mysqli_query($mysqli, $cherche_liaisons);
+								?>
+								
+								<!-- Pour faire la liste déroulante des noms d'image-->
+								<?php $i = 0; ?>
+								<select name="liaison_select" id="liaison_select" class="liste_deroulante" required>
+									<option value="0" selected disabled>Sélectionner une liaison</option>
+									<?php
+									while($liaison_trouve = mysqli_fetch_assoc($liste_liaisons)){
+										$i++;
+										echo "<option>".$liaison_trouve["portDepart"]." à ".$liaison_trouve["portArrivee"]."</option>";
+									}
+									?>
+								</select>
+						</TD>
+					</TR>
+				</TABLE>
+				<BR/>
+				<INPUT type="submit" value="Supprimer la liaison" name="suppr_liaison" class="button_formulaire" />
+			</FORM>
+		</CENTER>
+	</BODY>
+	<script type='text/javascript'>
+		var lien1 = document.getElementById("lien1");
+		var lien2 = document.getElementById("lien2");
+		var lien3 = document.getElementById("lien3");
+		var lien4 = document.getElementById("lien4");
+		
+		lien4.classList.add("lien_actif_menugauche");
+			
+		document.getElementById("lien1").addEventListener("click", function(){
+			lien1.classList.add("lien_actif_menugauche");
+			lien2.classList.remove("lien_actif_menugauche");
+			lien3.classList.remove("lien_actif_menugauche");
+			lien4.classList.remove("lien_actif_menugauche");
+		});
+			
+		document.getElementById("lien2").addEventListener("click", function(){
+			lien1.classList.remove("lien_actif_menugauche");
+			lien2.classList.add("lien_actif_menugauche");
+			lien3.classList.remove("lien_actif_menugauche");
+			lien4.classList.remove("lien_actif_menugauche");
+		});
+			
+		document.getElementById("lien3").addEventListener("click", function(){
+			lien1.classList.remove("lien_actif_menugauche");
+			lien2.classList.remove("lien_actif_menugauche");
+			lien3.classList.add("lien_actif_menugauche");
+			lien4.classList.remove("lien_actif_menugauche");
+		});
+		
+		document.getElementById("lien4").addEventListener("click", function(){
+			lien1.classList.remove("lien_actif_menugauche");
+			lien2.classList.remove("lien_actif_menugauche");
+			lien3.classList.remove("lien_actif_menugauche");
+			lien4.classList.add("lien_actif_menugauche");
+		});
+	</script>
+</HTML>

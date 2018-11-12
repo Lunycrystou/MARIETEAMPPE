@@ -1,0 +1,54 @@
+<head>
+	<link rel="stylesheet" href="css_ines.css">
+</head>
+
+<body class="fond_menu">
+<div class="menu_gauche">
+	<p class="texte" align="center"><b>Liaisons</b></p>
+	<a href="planif_jour.php" id="lien1" class="lien" target="contenu_principal">• Liste des liaisons</a>
+	<br/> <br/>
+	<a href="planif_periode.php" id="lien2" class="lien" target="contenu_principal">• Ajouter une liaison</a>
+	<br/> <br/>
+	<a href="modif_type.php" id="lien3" class="lien" target="contenu_principal">• Modifier une liaison</a>
+	<br/> <br/>
+	<a href="modif_im_planif.php" id="lien4" class="lien" target="contenu_principal">• Supprimer une liaison</a>
+</div>
+</body>
+
+<!-- ////////// JavaScript ////////// -->
+<script type='text/javascript'>
+	var lien1 = document.getElementById("lien1");
+	var lien2 = document.getElementById("lien2");
+	var lien3 = document.getElementById("lien3");
+	var lien4 = document.getElementById("lien4");
+	
+	lien1.classList.add("lien_actif_menugauche");
+		
+	document.getElementById("lien1").addEventListener("click", function(){
+		lien1.classList.add("lien_actif_menugauche");
+		lien2.classList.remove("lien_actif_menugauche");
+		lien3.classList.remove("lien_actif_menugauche");
+		lien4.classList.remove("lien_actif_menugauche");
+	});
+		
+	document.getElementById("lien2").addEventListener("click", function(){
+		lien1.classList.remove("lien_actif_menugauche");
+		lien2.classList.add("lien_actif_menugauche");
+		lien3.classList.remove("lien_actif_menugauche");
+		lien4.classList.remove("lien_actif_menugauche");
+	});
+		
+	document.getElementById("lien3").addEventListener("click", function(){
+		lien1.classList.remove("lien_actif_menugauche");
+		lien2.classList.remove("lien_actif_menugauche");
+		lien3.classList.add("lien_actif_menugauche");
+		lien4.classList.remove("lien_actif_menugauche");
+	});
+	
+	document.getElementById("lien4").addEventListener("click", function(){
+		lien1.classList.remove("lien_actif_menugauche");
+		lien2.classList.remove("lien_actif_menugauche");
+		lien3.classList.remove("lien_actif_menugauche");
+		lien4.classList.add("lien_actif_menugauche");
+	});
+</script>

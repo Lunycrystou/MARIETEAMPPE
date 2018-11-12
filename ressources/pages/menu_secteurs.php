@@ -1,5 +1,5 @@
 <head>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css_ines.css">
 </head>
 
 <body class="fond_menu">
@@ -40,135 +40,135 @@
 	var lien9 = document.getElementById("lien9");
 	var lien10 = document.getElementById("lien10");
 	
-	lien1.classList.add("lien_cours");
+	lien1.classList.add("lien_actif_menugauche");
 		
 	document.getElementById("lien1").addEventListener("click", function(){
-		lien1.classList.add("lien_cours");
-		lien2.classList.remove("lien_cours");
-		lien3.classList.remove("lien_cours");
-		lien4.classList.remove("lien_cours");
-		lien5.classList.remove("lien_cours");
-		lien6.classList.remove("lien_cours");
-		lien7.classList.remove("lien_cours");
-		lien8.classList.remove("lien_cours");
-		lien9.classList.remove("lien_cours");
-		lien10.classList.remove("lien_cours");
+		lien1.classList.add("lien_actif_menugauche");
+		lien2.classList.remove("lien_actif_menugauche");
+		lien3.classList.remove("lien_actif_menugauche");
+		lien4.classList.remove("lien_actif_menugauche");
+		lien5.classList.remove("lien_actif_menugauche");
+		lien6.classList.remove("lien_actif_menugauche");
+		lien7.classList.remove("lien_actif_menugauche");
+		lien8.classList.remove("lien_actif_menugauche");
+		lien9.classList.remove("lien_actif_menugauche");
+		lien10.classList.remove("lien_actif_menugauche");
 	});
 		
 	document.getElementById("lien2").addEventListener("click", function(){
-		lien1.classList.remove("lien_cours");
-		lien2.classList.add("lien_cours");
-		lien3.classList.remove("lien_cours");
-		lien4.classList.remove("lien_cours");
-		lien5.classList.remove("lien_cours");
-		lien6.classList.remove("lien_cours");
-		lien7.classList.remove("lien_cours");
-		lien8.classList.remove("lien_cours");
-		lien9.classList.remove("lien_cours");
-		lien10.classList.remove("lien_cours");
+		lien1.classList.remove("lien_actif_menugauche");
+		lien2.classList.add("lien_actif_menugauche");
+		lien3.classList.remove("lien_actif_menugauche");
+		lien4.classList.remove("lien_actif_menugauche");
+		lien5.classList.remove("lien_actif_menugauche");
+		lien6.classList.remove("lien_actif_menugauche");
+		lien7.classList.remove("lien_actif_menugauche");
+		lien8.classList.remove("lien_actif_menugauche");
+		lien9.classList.remove("lien_actif_menugauche");
+		lien10.classList.remove("lien_actif_menugauche");
 	});
 		
 	document.getElementById("lien3").addEventListener("click", function(){
-		lien1.classList.remove("lien_cours");
-		lien2.classList.remove("lien_cours");
-		lien3.classList.add("lien_cours");
-		lien4.classList.remove("lien_cours");
-		lien5.classList.remove("lien_cours");
-		lien6.classList.remove("lien_cours");
-		lien7.classList.remove("lien_cours");
-		lien8.classList.remove("lien_cours");
-		lien9.classList.remove("lien_cours");
-		lien10.classList.remove("lien_cours");
+		lien1.classList.remove("lien_actif_menugauche");
+		lien2.classList.remove("lien_actif_menugauche");
+		lien3.classList.add("lien_actif_menugauche");
+		lien4.classList.remove("lien_actif_menugauche");
+		lien5.classList.remove("lien_actif_menugauche");
+		lien6.classList.remove("lien_actif_menugauche");
+		lien7.classList.remove("lien_actif_menugauche");
+		lien8.classList.remove("lien_actif_menugauche");
+		lien9.classList.remove("lien_actif_menugauche");
+		lien10.classList.remove("lien_actif_menugauche");
 	});
 	
 	document.getElementById("lien4").addEventListener("click", function(){
-		lien1.classList.remove("lien_cours");
-		lien2.classList.remove("lien_cours");
-		lien3.classList.remove("lien_cours");
-		lien4.classList.add("lien_cours");
-		lien5.classList.remove("lien_cours");
-		lien6.classList.remove("lien_cours");
-		lien7.classList.remove("lien_cours");
-		lien8.classList.remove("lien_cours");
-		lien9.classList.remove("lien_cours");
-		lien10.classList.remove("lien_cours");
+		lien1.classList.remove("lien_actif_menugauche");
+		lien2.classList.remove("lien_actif_menugauche");
+		lien3.classList.remove("lien_actif_menugauche");
+		lien4.classList.add("lien_actif_menugauche");
+		lien5.classList.remove("lien_actif_menugauche");
+		lien6.classList.remove("lien_actif_menugauche");
+		lien7.classList.remove("lien_actif_menugauche");
+		lien8.classList.remove("lien_actif_menugauche");
+		lien9.classList.remove("lien_actif_menugauche");
+		lien10.classList.remove("lien_actif_menugauche");
 	});
 	
 	document.getElementById("lien5").addEventListener("click", function(){
-		lien1.classList.remove("lien_cours");
-		lien2.classList.remove("lien_cours");
-		lien3.classList.remove("lien_cours");
-		lien4.classList.remove("lien_cours");
-		lien5.classList.add("lien_cours");
-		lien6.classList.remove("lien_cours");
-		lien7.classList.remove("lien_cours");
-		lien8.classList.remove("lien_cours");
-		lien9.classList.remove("lien_cours");
-		lien10.classList.remove("lien_cours");
+		lien1.classList.remove("lien_actif_menugauche");
+		lien2.classList.remove("lien_actif_menugauche");
+		lien3.classList.remove("lien_actif_menugauche");
+		lien4.classList.remove("lien_actif_menugauche");
+		lien5.classList.add("lien_actif_menugauche");
+		lien6.classList.remove("lien_actif_menugauche");
+		lien7.classList.remove("lien_actif_menugauche");
+		lien8.classList.remove("lien_actif_menugauche");
+		lien9.classList.remove("lien_actif_menugauche");
+		lien10.classList.remove("lien_actif_menugauche");
 	});
 	
 	document.getElementById("lien6").addEventListener("click", function(){
-		lien1.classList.remove("lien_cours");
-		lien2.classList.remove("lien_cours");
-		lien3.classList.remove("lien_cours");
-		lien4.classList.remove("lien_cours");
-		lien5.classList.remove("lien_cours");
-		lien6.classList.add("lien_cours");
-		lien7.classList.remove("lien_cours");
-		lien8.classList.remove("lien_cours");
-		lien9.classList.remove("lien_cours");
-		lien10.classList.remove("lien_cours");
+		lien1.classList.remove("lien_actif_menugauche");
+		lien2.classList.remove("lien_actif_menugauche");
+		lien3.classList.remove("lien_actif_menugauche");
+		lien4.classList.remove("lien_actif_menugauche");
+		lien5.classList.remove("lien_actif_menugauche");
+		lien6.classList.add("lien_actif_menugauche");
+		lien7.classList.remove("lien_actif_menugauche");
+		lien8.classList.remove("lien_actif_menugauche");
+		lien9.classList.remove("lien_actif_menugauche");
+		lien10.classList.remove("lien_actif_menugauche");
 	});
 	
 	document.getElementById("lien7").addEventListener("click", function(){
-		lien1.classList.remove("lien_cours");
-		lien2.classList.remove("lien_cours");
-		lien3.classList.remove("lien_cours");
-		lien4.classList.remove("lien_cours");
-		lien5.classList.remove("lien_cours");
-		lien6.classList.remove("lien_cours");
-		lien7.classList.add("lien_cours");
-		lien8.classList.remove("lien_cours");
-		lien9.classList.remove("lien_cours");
-		lien10.classList.remove("lien_cours");
+		lien1.classList.remove("lien_actif_menugauche");
+		lien2.classList.remove("lien_actif_menugauche");
+		lien3.classList.remove("lien_actif_menugauche");
+		lien4.classList.remove("lien_actif_menugauche");
+		lien5.classList.remove("lien_actif_menugauche");
+		lien6.classList.remove("lien_actif_menugauche");
+		lien7.classList.add("lien_actif_menugauche");
+		lien8.classList.remove("lien_actif_menugauche");
+		lien9.classList.remove("lien_actif_menugauche");
+		lien10.classList.remove("lien_actif_menugauche");
 	});
 	
 	document.getElementById("lien8").addEventListener("click", function(){
-		lien1.classList.remove("lien_cours");
-		lien2.classList.remove("lien_cours");
-		lien3.classList.remove("lien_cours");
-		lien4.classList.remove("lien_cours");
-		lien5.classList.remove("lien_cours");
-		lien6.classList.remove("lien_cours");
-		lien7.classList.remove("lien_cours");
-		lien8.classList.add("lien_cours");
-		lien9.classList.remove("lien_cours");
-		lien10.classList.remove("lien_cours");
+		lien1.classList.remove("lien_actif_menugauche");
+		lien2.classList.remove("lien_actif_menugauche");
+		lien3.classList.remove("lien_actif_menugauche");
+		lien4.classList.remove("lien_actif_menugauche");
+		lien5.classList.remove("lien_actif_menugauche");
+		lien6.classList.remove("lien_actif_menugauche");
+		lien7.classList.remove("lien_actif_menugauche");
+		lien8.classList.add("lien_actif_menugauche");
+		lien9.classList.remove("lien_actif_menugauche");
+		lien10.classList.remove("lien_actif_menugauche");
 	});
 	
 	document.getElementById("lien9").addEventListener("click", function(){
-		lien1.classList.remove("lien_cours");
-		lien2.classList.remove("lien_cours");
-		lien3.classList.remove("lien_cours");
-		lien4.classList.remove("lien_cours");
-		lien5.classList.remove("lien_cours");
-		lien6.classList.remove("lien_cours");
-		lien7.classList.remove("lien_cours");
-		lien8.classList.remove("lien_cours");
-		lien9.classList.add("lien_cours");
-		lien10.classList.remove("lien_cours");
+		lien1.classList.remove("lien_actif_menugauche");
+		lien2.classList.remove("lien_actif_menugauche");
+		lien3.classList.remove("lien_actif_menugauche");
+		lien4.classList.remove("lien_actif_menugauche");
+		lien5.classList.remove("lien_actif_menugauche");
+		lien6.classList.remove("lien_actif_menugauche");
+		lien7.classList.remove("lien_actif_menugauche");
+		lien8.classList.remove("lien_actif_menugauche");
+		lien9.classList.add("lien_actif_menugauche");
+		lien10.classList.remove("lien_actif_menugauche");
 	});
 	
 	document.getElementById("lien10").addEventListener("click", function(){
-		lien1.classList.remove("lien_cours");
-		lien2.classList.remove("lien_cours");
-		lien3.classList.remove("lien_cours");
-		lien4.classList.remove("lien_cours");
-		lien5.classList.remove("lien_cours");
-		lien6.classList.remove("lien_cours");
-		lien7.classList.remove("lien_cours");
-		lien8.classList.remove("lien_cours");
-		lien9.classList.remove("lien_cours");
-		lien10.classList.add("lien_cours");
+		lien1.classList.remove("lien_actif_menugauche");
+		lien2.classList.remove("lien_actif_menugauche");
+		lien3.classList.remove("lien_actif_menugauche");
+		lien4.classList.remove("lien_actif_menugauche");
+		lien5.classList.remove("lien_actif_menugauche");
+		lien6.classList.remove("lien_actif_menugauche");
+		lien7.classList.remove("lien_actif_menugauche");
+		lien8.classList.remove("lien_actif_menugauche");
+		lien9.classList.remove("lien_actif_menugauche");
+		lien10.classList.add("lien_actif_menugauche");
 	});
 </script>
